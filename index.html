@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Noden Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <h3 id="logo-mont"><span>n</span>oden <span>s</span>era</h3>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="icon" id="toggle">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </button>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class="main-text">
+            <h6><span>D</span>esign and <span>C</span>reate</h6>
+            <h1>Front-end Developer</h1>
+            <h1 id="text"></h1>
+        </div>
+        <div id="rotating-items">
+            <img id="profile-pic" src="https://pbs.twimg.com/profile_images/1321535404659609601/YJPePnRz_400x400.jpg"
+                alt="Profile pic">
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </main>
+
+    <h1 class="title">Technologies I use</h1>
+
+    <div class="box">
+        <img class="tech-icons" src="https://img.icons8.com/color/50/000000/html-5--v1.png" />
+        <h2>html</h2>
+    </div>
+    <div class="box">
+        <img class="tech-icons" src="https://img.icons8.com/color/50/000000/css3.png" />
+        <h2>css</h2>
+    </div>
+    <div class="box">
+        <img class="tech-icons" src="https://img.icons8.com/color/50/000000/javascript.png" />
+        <h2>javascript</h2>
+    </div>
+    <div class="box">
+        <img class="tech-icons" src="https://img.icons8.com/color/50/000000/bootstrap.png" />
+        <h2>bootstrap</h2>
+    </div>
+    <div class="box">
+        <img class="tech-icons" src="https://img.icons8.com/color/48/000000/react-native.png" />
+        <h2>react</h2>
+    </div>
+
+    <!-- services section start -->
+    <section id="services" class="service section">
+        <div class="container">
+            <div class="row">
+                <div class="section-title pdd-15">
+                    <h1 class="title">Services</h1>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-laptop"></i></div>
+                        <h4>web design</h4>
+                        <p>Designs that Reflects your Brand Personality</p>
+                    </div>
+                </div>
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-camera"></i></div>
+                        <h4>photography</h4>
+                        <p>Present your Business in High Quality Images</p>
+                    </div>
+                </div>
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-code"></i></div>
+                        <h4>web development</h4>
+                        <p>Get a Custom Web Page. SEO and Mobile Optimized</p>
+                    </div>
+                </div>
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-film"></i></div>
+                        <h4>video editing</h4>
+                        <p>Videos that Tells Stories Done Efficiently</p>
+                    </div>
+                </div>
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-rocket"></i></div>
+                        <h4>seo optimization</h4>
+                        <p>Grow Traffic and Increase Revenue</p>
+                    </div>
+                </div>
+                <!-- Service item -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon-service"><i class="fa fa-paint-brush"></i></div>
+                        <h4>logo design</h4>
+                        <p>Make your Business Unique and Visually Stunning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <h1 class="title">Let's Connect!</h1>
+    <section id="contact">
+        <div class="contact-form">
+            <form id="form" action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="input-group inputBox">
+                    <input type="text" id="email" onkeyup="validate()" placeholder="E-mail" class="form-control">
+                    <span class="indicator"></span>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-1">send</button>
+            </form>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <footer>
+        <p class="legal">© Noden Sera 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
