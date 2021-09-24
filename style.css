@@ -16,6 +16,10 @@
 	scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 	margin: 0;
@@ -227,7 +231,6 @@ main {
 /* animations section */
 
 .box {
-  
   color: #fff;
   display: flex;
   align-items: center;
@@ -239,7 +242,6 @@ main {
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   transform: translateX(400%);
   transition: transform 0.4s ease;
-  
 }
 
 .box:nth-of-type(even) {
@@ -273,6 +275,13 @@ main {
   font-size: 150px;
 }
 
+.tech-container {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* services section */
 
 .service-item {
@@ -293,7 +302,6 @@ main {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
-
 
 .row {
 	display: flex;
@@ -320,7 +328,6 @@ main {
   0%   {transform: scale(1.3);}
   100% {transform: scale(1.5);}
 }
-
 
 .service-item-inner h4 {
 	margin: 15px;
@@ -430,40 +437,36 @@ main {
 	width: 100%;
 }
 
-#form .inputBox
-{
+#form .inputBox {
 	position: relative;
 }
-#form .inputBox .indicator
-{
-    position: absolute;
-    right: 20px;
-    top: 0.75rem;
-    width: 10px;
-    height: 10px;
-    background: #0167da;
-    border-radius: 50%;
+
+#form .inputBox .indicator {
+  position: absolute;
+  right: 20px;
+  top: 0.75rem;
+  width: 10px;
+  height: 10px;
+  background: #0167da;
+  border-radius: 50%;
 }
 
-#form.invalid .inputBox .indicator
-{
-    background: #6fb72f;
-    box-shadow: 0 0 5px #6fb72f,
-    			0 0 10px #6fb72f,
-    			0 0 20px #6fb72f,
-    			0 0 40px #6fb72f;
+#form.invalid .inputBox .indicator {
+  background: #6fb72f;
+  box-shadow: 0 0 5px #6fb72f,
+    0 0 10px #6fb72f,
+    0 0 20px #6fb72f,
+    0 0 40px #6fb72f;
 }
-#form.valid .inputBox .indicator
-{
-    background: #6fb72f;
-    box-shadow: 0 0 5px #6fb72f,
-    			0 0 10px #6fb72f,
-    			0 0 20px #6fb72f,
-    			0 0 40px #6fb72f;
+#form.valid .inputBox .indicator {
+  background: #6fb72f;
+  box-shadow: 0 0 5px #6fb72f,
+    0 0 10px #6fb72f,
+    0 0 20px #6fb72f,
+    0 0 40px #6fb72f;
 }
 
 /*  review code bellow */
-
 
 @media (max-width: 767px) {
 	.contact-img, .contact-form,
@@ -479,15 +482,13 @@ main {
 }
 
 
-/* Fotter Section */
+/* Footer Section */
 footer p {
   color: #fff;
   font-size: 0.6rem;
   text-align: center;
   margin: 15px;
 }
-
-
 
 .btn svg {
   height: 30px;
